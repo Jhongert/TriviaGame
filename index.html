@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>JavaScript Trivia Game - Jhongert Fuertes</title>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<header class="container">
+			<h1>JavaScript Trivia</h1>
+		</header>
+		<div class="main-container">
+			<section>
+				<div class="container" id="intro">
+					<h3>Choose your level</h3>
+					<div>
+						<input type="radio" id="noob" name="level" value="noob" checked>
+						<label for="noob">Noob</label><br>
+  						<input type="radio" id="pro" name="level" value="pro">
+  						<label for="pro">Pro</label><br>
+  						<input type="radio" id="master" name="level" value="master">
+  						<label for="master">Master</label>
+					</div>
+					<button id="play" class="btn">Play</button>
+				</div>
+
+				<div class="container" id="gameSection">
+					<div id="gameHeader">
+						<p><span id="questionNumber">1</span>/10</p>
+						<p><span id="timer"></span> sec</p>
+					</div>
+					
+					<div id="questionHolder">
+						<div id="question"></div>
+						<ol id="choices">
+							<li class="choice" value="0"></li>
+							<li class="choice" value="1"></li>
+							<li class="choice" value="2"></li>
+							<li class="choice" value="3"></li>
+						</ol>
+					</div>
+
+					<div>
+						<button id="playAgain" class="btn">Play again</button>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- jQuery -->
+    	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+    	<!-- Script -->
+    	<script type="text/javascript" src="assets/javascript/config.js"></script>
+    	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	</body>
+</html>
