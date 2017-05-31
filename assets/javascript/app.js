@@ -19,7 +19,7 @@ function newGame(){
 
 function gameOver(){
 	clearInterval(intervalId);
-	var q = $("#question");
+	var q = $("#msg");
 	q.html("<h1>How you did</h1>");
 	q.append("<h3>Right answers: " + rightAnswer + "</h3>");
 	q.append("<h3>Wrong answers: " + wrongAnswer + "</h3>");
@@ -33,14 +33,14 @@ function setCounter(){
 
 	//Change the time depending on the selected level noob=30, pro=20 and master=10
 	if(level == "noob"){
-		counter = 30;
+		counter = 25;
 	} else if (level == "pro"){
-		counter = 20;
+		counter = 15;
 	} else{
 		counter = 10;
 	}
 
-	$("#timer").html(counter);
+	$("#timer").text(counter);
 }
 
 function newQuestion(){
@@ -58,18 +58,18 @@ function newQuestion(){
 		//delete the current question from array questions, that way we don't pick it again
 		questions.splice(randomNum,1);
 
+		$("#msg").hide();
 
+		$("#questionHolder").show();
 		//update html with new question
-		$("#question").html("<h3>" + curQuestion.question + "</h3>");
-		
-		$("#choices").show();
+		$("#question").text(curQuestion.question);
 
 		//update choices
 		$(".choice").each(function(index){
 			$(this).html(curQuestion.choices[index]);
 		});
 
-		$("#questionNumber").html(questionNumber);
+		$("#questionNumber").text(questionNumber);
 
 		//start the timer
 		intervalId = setInterval(updateTimer, 1000);
@@ -78,26 +78,20 @@ function newQuestion(){
 
 function updateTimer(){
 	counter--;
-	$("#timer").html(counter);
+	$("#timer").text(counter);
 	if(counter == 0){
 		timesUp();
 	}
 }
 
-function stopTimer(){
-	clearInterval(intervalId);
-}
-
 function timesUp(){
 	clearInterval(intervalId);
-	$("#choices").hide();
-	$("#question").append("<h2>Ooh no!</h2>");
-	$("#question").append("<p>The answer is: " + curQuestion.choices[curQuestion.answer] + "</p>");
+	$("#questionHolder").hide();
+	$("#msg").show().html("<h2>Ooh no, times up!</h2>");
+	$("#msg").append("<p>The answer is: " + curQuestion.choices[curQuestion.answer] + "</p>");
 	setTimeout(newQuestion, 4000);
 	noAnswer ++;
 }
-
-
 
 $(document).ready(function(){
 
@@ -109,26 +103,23 @@ $(document).ready(function(){
 	})
 
 	$(".choice").click(function(){
-		stopTimer();
+		clearInterval(intervalId);
 
-		$("#choices").hide();
+		$("#questionHolder").hide();
 
 		var answer = $(this).val();
 		var correctAnswer = curQuestion.answer;
-		
 
 		if(answer == correctAnswer){
-			$("#question").append("<h2>Correct!</h2>");
+			$("#msg").html("<h2>Correct!</h2>").show();
 			rightAnswer ++;
 		} else {
-			$("#question").append("<h2>Oops!</h2>");
-			$("#question").append("<p>The correct answer is: <br>" + curQuestion.choices[correctAnswer] + "</p>");
-
+			$("#msg").html("<h2>Oops!</h2>").show();
+			$("#msg").append("<p>The correct answer is: <br>" + curQuestion.choices[correctAnswer] + "</p>");
 			wrongAnswer ++;
 		}
 
 		setTimeout(newQuestion, 3000);
-		
 	})
 
 	$("#playAgain").click(function(){

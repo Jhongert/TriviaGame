@@ -6,37 +6,53 @@
 		<title>JavaScript Trivia Game - Jhongert Fuertes</title>
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
 
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<body>
-		<header class="container">
-			<h1>JavaScript Trivia</h1>
+		<header>
+			<div class="container">
+				<h1>JavaScript Trivia</h1>
+			</div>
 		</header>
-		<div class="main-container">
-			<section>
-				<div class="container" id="intro">
-					<h3>Choose your level</h3>
+			<main class="container">
+				<div id="intro">
+					<h1>Choose your level</h1>
 					<div>
 						<input type="radio" id="noob" name="level" value="noob" checked>
-						<label for="noob">Noob</label><br>
-  						<input type="radio" id="pro" name="level" value="pro">
-  						<label for="pro">Pro</label><br>
-  						<input type="radio" id="master" name="level" value="master">
-  						<label for="master">Master</label>
+						<label for="noob">
+						    <h2>Noob</h2>
+						    <p>Think well, You have 25 seconds to answer.</p>
+						 </label>
+					</div>
+					<div>
+						<input type="radio" id="pro" name="level" value="pro">
+						<label for="pro">
+						  	<h2>Pro</h2>
+						  	<p>If you are a Pro, you can answer these questions in 15 seconds.</p>
+						</label>
+					</div>
+					<div>
+						<input type="radio" id="master" name="level" value="master">
+						<label for="master">
+							<h2>Master</h2>
+						    <p>Only a master can answer these questions in 10 seconds.</p>
+						 </label>
 					</div>
 					<button id="play" class="btn">Play</button>
 				</div>
 
-				<div class="container" id="gameSection">
+				<div id="gameSection">
 					<div id="gameHeader">
 						<p><span id="questionNumber">1</span>/10</p>
 						<p><span id="timer"></span> sec</p>
 					</div>
 					
 					<div id="questionHolder">
-						<div id="question"></div>
+						<h3 id="question"></h3>
 						<ol id="choices">
 							<li class="choice" value="0"></li>
 							<li class="choice" value="1"></li>
@@ -45,11 +61,14 @@
 						</ol>
 					</div>
 
+					<div id="msg">
+					</div>
+
 					<div>
 						<button id="playAgain" class="btn">Play again</button>
 					</div>
 				</div>
-			</section>
+			</main>
 		</div>
 		<!-- jQuery -->
     	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
