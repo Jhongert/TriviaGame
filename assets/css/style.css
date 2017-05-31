@@ -25,6 +25,7 @@ header {
   	padding-left: 15px;
 }
 
+/* sections for introduction and game*/
 #gameSection, #intro {
 	background-color: #ecf0f1;
 	padding: 15px;
@@ -34,17 +35,16 @@ header {
 	display: none;
 }
 
+/* Header with timer and question number */
 #gameHeader {
 	height: 60px;
 	border-bottom: 1px solid #2c3e50;
-	padding-bottom: 0;
 	margin-bottom: 30px;
 }
 
 #gameHeader p{
 	width: 50%;
 	float: left;
-	font-size: 16px;
 }
 
 #gameHeader p:last-child{
@@ -55,6 +55,7 @@ header {
 	font-size: 36px;
 }
 
+/* Question */
 #question{
 	text-align: center;
 	padding: 20px 8px;
@@ -65,15 +66,7 @@ header {
     border-top-right-radius: 4px;
 }
 
-#msg {
-	display: none;
-	text-align: center;
-}
-
-#choices {
-	width: 100%;
-}
-
+/* each of the choices that a question has*/
 .choice {
 	cursor: pointer;
     position: relative;
@@ -94,12 +87,12 @@ header {
 	color: #999;
 }
 
-.btn {
+/* buttons play and play again*/
+#play, #playAgain {
 	display: block;
 	padding: 10px 24px;
 	font-size: 18px;
-	line-height: 1.33;
-	border-radius:6px;
+	border-radius: 6px;
 	color: #fff;
 	border:1px solid #62c462;
 	margin-bottom: 5px;
@@ -107,9 +100,6 @@ header {
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
-}
-
-#play, #playAgain {
 	background-color: #62c462;
     margin-top: 30px;
     margin-right: auto;
@@ -118,6 +108,12 @@ header {
 
 #playAgain {
 	display: none;
+}
+
+/* classes to style messages when answer is right or wrong */
+#msg {
+	display: none;
+	text-align: center;
 }
 
 .correct, .wrong {
@@ -140,16 +136,14 @@ header {
 	width: 210px;
 }
 
+/* Headings */
 h1, h2, h3 {
-	font-family: inherit;
   	font-weight: 500;
-  	line-height: 1.1;
   	margin-bottom: 20px;
 }
 
 h1 {
   font-size: 36px;
-  color: inherit;
 }
 
 h2 {
@@ -160,7 +154,7 @@ h3 {
 	font-size: 24px;
 }
 
-
+/* Radio buttons*/
 #intro h2{
 	margin-top: 4px;
 	margin-bottom: 4px;
@@ -206,6 +200,7 @@ input[type="radio"]:checked + label::after {
   box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
 }
 
+/* Media queries */
 @media (min-width: 768px) {
   	.container {
     	width: 750px;

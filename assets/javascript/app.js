@@ -1,5 +1,4 @@
 window.onload = function() {
-
   // Click events
   $("#play").click(game.newGame);
   $("#playAgain").click(game.reset);
@@ -70,10 +69,9 @@ var game = {
 		$("#playAgain").css("display", "block");
 	},
 
+	//Set the time depending on the selected level noob=25, pro=15 and master=10
 	setTime: function (){
 		game.level = $("input[name= level]:checked").val();
-
-		//Change the time depending on the selected level noob=25, pro=15 and master=10
 		if(game.level == "noob"){
 			game.time = 25;
 		} else if (game.level == "pro"){
@@ -108,6 +106,7 @@ var game = {
 		$("playAgain").css("display", "none");
 	},
 
+	//Check if answer is right or wrong and display a message
 	checkAnswer: function(){
 		clearInterval(intervalId);
 
@@ -124,7 +123,6 @@ var game = {
 			$("#msg").append("<p>The correct answer is: <br>" + game.curQuestion.choices[correctAnswer] + "</p>");
 			game.wrongAnswer ++;
 		}
-
 		setTimeout(game.newQuestion, 3000);
 	}
 }
