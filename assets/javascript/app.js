@@ -25,6 +25,7 @@ var game = {
 		game.wrongAnswer = 0;
 		game.noAnswer = 0;
 		$("#intro").hide();
+		$("#playAgain").hide();
 		$("#gameSection").show();
 		game.newQuestion();
 	},
@@ -96,7 +97,7 @@ var game = {
 		$("#questionHolder").hide();
 		$("#msg").show().html("<h2>Ooh no, times up!</h2>");
 		$("#msg").append("<p>The answer is: " + game.curQuestion.choices[game.curQuestion.answer] + "</p>");
-		setTimeout(game.newQuestion, 4000);
+		setTimeout(game.newQuestion, 3000);
 		game.noAnswer ++;
 	},
 
