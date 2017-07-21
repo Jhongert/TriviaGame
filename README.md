@@ -1,5 +1,5 @@
 # TriviaGame
-This is a game that shows one question (about JavaScript) until the player answers it or their time runs out. The time depends on the level chosen when starting the game.
+This is a game that shows one question (about JavaScript) until the player answers it or the time runs out. The time depends on the level chosen when starting the game.
 
 ## How it works
 - The player chooses the level of experience and then click Play.
