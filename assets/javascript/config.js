@@ -5,140 +5,140 @@
 */
 var config = [
 	{
-		question: 'How does a WHILE loop start?',
-		choices:['while(i = 0)', 'while(i <= 10; i++)', 'while(i <> 10)', 'while(i != 10)'],
-		answer: 3
+		question: 'What is the name of Han Solo\’s ship?',
+		choices:['Star Destroyer', 'Tantive IV', 'Millennium Falcon', 'Death star'],
+		answer: 2
 	},
 
 	{
-		question: 'Which operator is used to assign a value to a variable?',
-		choices: ['==', '=', '+', '!='],
+		question: 'What is the weapon used by Jedi Knights?',
+		choices: ['Sword', 'Lightsaber', 'Gun', 'Knife'],
 		answer: 1
 	},
 
 	{
-		question: 'How do you round the number 6.8, to the nearest integer?',
-		choices:['round(6.8)', 'math.Round(6.8)', 'Round(6.8)', 'Math.round(6.8)'],
+		question: 'Which young Jedi Knight becomes Darth Vader in Star Wars?',
+		choices:['Kylo Ren', 'Yoda', 'Luke Skywalker', 'Anakin Skywalker'],
 		answer: 3
 	},
 
 	{
-		question: 'How can you add a comment in a JavaScript?',
-		choices:['&lt;!--Comment--&gt;', '/*Comment', '"Comment"', '//Comment'],
-		answer: 3
-	},
-
-	{
-		question: 'How do you declare a JavaScript variable?',
-		choices: ['variable name', 'var name', 'var = name', 'name is var'],
-		answer: 1
-	},
-
-	{
-		question: 'How does a FOR loop start?',
-		choices:['for (i = 0; i <= 3; i++)', 'for (i == 3; i++)', ' for i = 1 to 3', 'for (i = 0; i <= 3)'],
+		question: 'What Wookiee is Han Solo’s loyal friend and first mate?',
+		choices:['Chewie', 'Wanpa', 'Watto', 'Sebulba'],
 		answer: 0
 	},
 
 	{
-		question: 'Which of the following is not a valid JavaScript variable name?',
-		choices:['_first_name','firstName','2name','name2'],
-		answer: 2
-	},
-
-	{
-		question: 'What is the correct JavaScript syntax to write "Hello World"?',
-		choices:['Print("Hello World")','document.write("Hello World")','write("Hello World")','document.print("Hello World")'],
+		question: 'Who is Luke and Leia’s mother?',
+		choices: ['Rey', 'Padme Amidala', 'Aayla Secura', 'Asajj Ventress'],
 		answer: 1
 	},
 
 	{
-		question: 'How to write an IF statement for executing some code if "y" is different to 6?',
-		choices: ['if(y <> 6)', 'if y <> 6', 'if(y != 6)', 'if(y not 6)'],
-		answer: 2
-	},
-
-	{
-		question: 'Inside which HTML element do we put the JavaScript?',
-		choices:['&lt;scripting&gt;','&lt;js script&gt;','&lt;javascript&gt;','&lt;script&gt;'],
-		answer: 3
-	},
-
-	{
-		question: 'What is the correct syntax for referring to an external script called "app.js"?',
-		choices:['&lt;script name="app.js"&gt;','&lt;script href="app.js"&gt;','&lt;script src:"app.js"&gt;','&lt;script src="app.js"&gt;'],
-		answer: 3
-	},
-
-	{
-		question: 'Which is the correct way to write a JavaScript array?',
-		choices:['var a = array("a1", "a2")', 'var a = ["a1", "a2"]', 'var a = {"a1", "a2"}', 'var a:["a1", "a2"]'],
-		answer: 1
-	},
-
-	{
-		question: 'JavaScript is interpreted by',
-		choices:['Client', 'Server', 'Object', 'None of above'],
+		question: 'How many members are there in the Jedi Council?',
+		choices:['12', '32', '8', '15'],
 		answer: 0
 	},
 
 	{
-		question: 'This method adds and/or removes elements from an array.',
-		choices:['reverse', 'push','splice', 'join'],
+		question: 'In the Star Wars film, what invisible power binds the galaxy together?',
+		choices:['A laser','The Fire','The Force','The starship'],
 		answer: 2
 	},
 
 	{
-		question: 'document.write(4 + "4"); output',
-		choices:['8','4','44', 'error'],
+		question: 'What is Yodaʼs last name?',
+		choices:['The master','He doesnʼt have one','Dameron','Cody'],
+		answer: 1
+	},
+
+	{
+		question: 'What do Han and Luke ride in the Snow on Hoth?',
+		choices: ['Millennium Falcon', 'X-wing', 'Tauntaum', 'Motorcycle'],
 		answer: 2
 	},
 
 	{
-		question: 'Which built-in method convert a string to lower case?',
-		choices:['toLowerCase()','toLower()','upperToLower()','lowerCase()'],
-		answer: 0
-	},
-
-	{
-		question: 'What is the correct JavaScript syntax to select an element with id="main"',
-		choices:['document.getElementByName("#main");',
-				 'document.getelementeyId("main");',
-				 'document.getElement("main");',
-				 'document.getElementById("main");'],
+		question: 'Who kills Jaba the Hutt?',
+		choices:['Lando',' Nien Numb','Zukuss','Princess Leia?'],
 		answer: 3
 	},
 
 	{
-		question: 'Where is the correct place to insert a JavaScript script?',
-		choices:['The &lt;head&gt; section',
-				 'The &lt;body&gt; section',
-				 'The &lt;head&gt; and &lt;body&gt; section',
-				 'Between the &lt;head&gt; and &lt;body&gt;'],
-		answer: 2
+		question: 'What planet is home to Chewbacca and the Wookiees?',
+		choices:['Dagobah','Alderaan','Mars','Kashyyyk'],
+		answer: 3
 	},
 
 	{
-		question: 'How do you write "Hello World" in an alert box?',
-		choices:['alertBox("Hello World")','alert("Hello World")','message("Hello World")','document.alert("Hello World")'],
+		question: 'How old is Yoda when he dies?',
+		choices:['700', '900', '59', '490'],
 		answer: 1
 	},
 
 	{
-		question: ' How do you create a function in JavaScript?',
-		choices:['function myFunction()', 'function = myFunction()', 'function:myFunction()', ' new function myFunction()'],
+		question: 'Han Solo upgraded his beloved Millennium Falcon from which stock starship?',
+		choices:['The YT-1300 stock light freighter', 'X-wing', 'The YT-1200', 'Millennium Falcon 2'],
 		answer: 0
 	},
 
 	{
-		question: 'How do you call a function named "myFunction"?',
-		choices:['call myFunction()', 'myFunction()', 'function myFunction()', 'myfunction()'],
+		question: 'What color is Yoda’s lightsaber in Attack of the Clones and Revenge of the Sith?',
+		choices:['Red', 'Blue','Green', 'White'],
+		answer: 2
+	},
+
+	{
+		question: 'Who preceded Senator Palpatine as Chancellor of the Galactic Senate?',
+		choices:['Dengar','General Hux','Chancellor Valorum', 'Admiral Ackbar'],
+		answer: 2
+	},
+
+	{
+		question: 'How many engines are on an X-wing fighter?',
+		choices:['4','8','6','2'],
+		answer: 0
+	},
+
+	{
+		question: 'Bail Organa is Princess Leia’s adoptive father. What is her adoptive mother’s name?',
+		choices:['Mon Mothma',
+				 'Queen Leia',
+				 'Padme Amidala',
+				 'Queen Breha Organa'],
+		answer: 3
+	},
+
+	{
+		question: 'Whose DNA were the clones made from?',
+		choices:['Darth Maul',
+				 'Anakin Skywalker',
+				 'Jango Fett',
+				 'Padme Amidala'],
+		answer: 2
+	},
+
+	{
+		question: 'What is the secret weapon the geonosians planned to make?',
+		choices:['A thermal detonator','The Death Star','A cannon','A rocket'],
 		answer: 1
 	},
 
 	{
-		question: 'How to write an IF statement in JavaScript?',
-		choices:['if(x == 8)', 'if x == 8 then', 'if(x = 8)', 'if{x == 8}'],
+		question: 'What was the name of the planet that the clones were made on?',
+		choices:['Kamino', 'Alderaan', 'Dagobah', 'Kashyyyk'],
+		answer: 0
+	},
+
+	{
+		question: 'What does Padme name her two children before she dies??',
+		choices:['Lucas and Luke', 'Luke and Leia', 'Lisa and Luke', 'Luke and Martha'],
+		answer: 1
+	},
+
+	{
+		question: 'Who kills Greedo in the Mos Eisley Cantina?',
+		choices:['Han Solo', 'Palpatine', ' Grand Moff Tarkin', 'Beru Lars'],
 		answer: 0
 	},
 ]
