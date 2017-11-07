@@ -1,9 +1,9 @@
 # TriviaGame
 This is a game that shows one question (about Star Wars) until the player answers it or the time runs out. The time depends on the level chosen when starting the game.
 
-![Start](https://github.com/Jhongert/Product-Registration/blob/master/assets/images/triviagame.jpeg?raw=true)
+![Start](https://github.com/Jhongert/TriviaGame/blob/master/assets/images/triviagame.jpeg?raw=true)
 
-![Playing](https://github.com/Jhongert/Product-Registration/blob/master/assets/images/playing.jpeg?raw=true)
+![Playing](https://github.com/Jhongert/TriviaGame/blob/master/assets/images/playing.jpeg?raw=true)
 
 ### How it works
 - The player chooses the level of experience and then click Play.
