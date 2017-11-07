@@ -1,8 +1,10 @@
 # TriviaGame
-This is a game that shows one question (about JavaScript) until the player answers it or the time runs out. The time depends on the level chosen when starting the game.
+This is a game that shows one question (about Star Wars) until the player answers it or the time runs out. The time depends on the level chosen when starting the game.
 
 ## How it works
 - The player chooses the level of experience and then click Play.
+
+
 - A question will appear.
 - After the player selects an answer or the time is out a message will appear.
 - If the player chooses the wrong answer, the app tells the player they selected the wrong option and then display the correct answer.
