@@ -2,32 +2,41 @@
   box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 1.42857143;
-    color: #2c3e50;
-    background-color: #fff;
+	color: #96939D;
+	background: url("../images/bg.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
 }
 
-header {
-	background-color: #2c3e50;
+h1#logo {
 	padding-top: 20px;
 	padding-bottom: 5px;
-	margin-bottom: 10px;
-	color: #fff;
+	margin-bottom: 30px;
+	color: #f2a210;
+	font-size: 60px!important;
+	text-align: center;
 }
 
 .container {
 	margin-right: auto;
   	margin-left: auto;
   	padding-right: 15px;
-  	padding-left: 15px;
+	padding-left: 15px;
 }
 
 /* sections for introduction and game*/
 #gameSection, #intro {
-	background-color: #ecf0f1;
+	background-color: #fff;
 	padding: 15px;
 	min-height: 355px;
 }
@@ -60,7 +69,7 @@ header {
 	text-align: center;
 	padding: 20px 8px;
     margin-bottom: 0px;
-    background-color: #0e75b9;
+    background-color: #484848;
     color: #fff;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -84,7 +93,7 @@ header {
 }
 
 .choice:hover{
-	color: #999;
+	background-color: rgb(240, 236, 236);
 }
 
 /* buttons play and play again*/
@@ -94,13 +103,13 @@ header {
 	font-size: 18px;
 	border-radius: 6px;
 	color: #fff;
-	border:1px solid #62c462;
+	border:1px solid #f2a210;
 	margin-bottom: 5px;
 	font-weight: 400px;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
-	background-color: #62c462;
+	background-color: #f2a210;
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto; 
@@ -166,25 +175,26 @@ input[type="radio"] {
 
 label {
   display: block;
-  background: white;
-  border: 1px solid #0e75b9;
+  background: #484848;
+  border: 1px solid #464545;
   border-radius: 2px;
   padding: 10px;
   margin-bottom: 28px;
   text-align: center;
-  box-shadow: 0px 3px 10px -2px rgba(161, 170, 166, 0.5);
+  box-shadow: 0px 3px 10px -2px rgba(67, 67, 67, 0.5);
   position: relative;
   cursor: pointer;
 }
 
 input[type="radio"]:checked + label {
-  background: #3498db;
+  background: #181818;
   color: white;
+  border-color: #181818;
 }
 input[type="radio"]:checked + label::after {
-  color: #3d3f43;
+  color: #fff;
   font-family: FontAwesome;
-  border: 2px solid #0e75b9;
+  border: 2px solid #f2a210;
   content: "\f00c";
   font-size: 20px;
   position: absolute;
@@ -196,7 +206,7 @@ input[type="radio"]:checked + label::after {
   line-height: 35px;
   text-align: center;
   border-radius: 50%;
-  background: white;
+  background: #f2a210;
   box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
 }
 
